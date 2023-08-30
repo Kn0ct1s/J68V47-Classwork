@@ -30,16 +30,30 @@ public class anagram {
         int random_n = rand.nextInt(words.length);
 
         System.out.println("Unscrammble this anagram: " + anagrams[random_n]);
-        System.out.print("--> ");
 
-        // read user input
-        String ans = u_input.nextLine();
+        int currTry = 0;
 
-        // check if they got the word correct
-        if (ans.equalsIgnoreCase(words[random_n])) {
-            System.out.println("Correct!\nThe word was " + words[random_n]);
-        } else {
-            System.out.println("Wrong, the word was " + words[random_n]);
+        // give the user 3 trys
+        while (currTry < 3){
+
+            System.out.println("Attempt " + currTry);
+            System.out.print("--> ");
+
+            // read user input
+            String ans = u_input.nextLine();
+
+            // check if they got the word correct
+            if (ans.equalsIgnoreCase(words[random_n])) {
+                System.out.println("Correct!\nThe word was " + words[random_n]);
+                break;
+            } else {
+                if (currTry == 2) {
+                    System.out.println("Wrong, the word was " + words[random_n]);
+                } else {
+                    System.out.println("Wrong, try again");
+                }
+                currTry++;
+            }
         }
     }
 }
