@@ -1,6 +1,32 @@
 import java.util.Scanner;
 
+
 public class free_toaster {
+
+//    public class Order {
+//        public String f_name;
+//        public String l_name;
+//
+//        private double price;
+//        private double deposit;
+//
+//        Scanner input = new Scanner(System.in);
+//
+//        public Order() {
+//            f_name = " ";
+//            l_name = " ";
+//            price = 0.0;
+//            deposit = 0.0;
+//        }
+//
+//         void get_f_name() {
+//            System.out.print("Enter your first name: ");
+//            Order.f_name = input.nextLine();
+//
+//            System.out.println("Enter your last name: ");
+//            Order.l_name
+//        }
+//    }
 
     static double round(double num) {
         double roundOff = Math.round(num * 100.0) / 100.0;
