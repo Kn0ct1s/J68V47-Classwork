@@ -1,23 +1,22 @@
 //import java.util.Scanner;
-//
+//import java.lang.Math;
 //public class lone {
-//    static float calculate_load(float amount, float rate, int years) {
-//        float payment
+//
+//    public static double loan_calc(float l, float j, int n) {
+//        double m = l * (j /  (1 - (l + j)));
 //    }
 //    public static void main(String[] args) {
-//        static float calculate_loan(float amount, float rate, int years) {
-//            float payment = amount * ( rate / ( 1 - (1 + rate)));
-//        }
+//        Scanner input = new Scanner(System.in);
 //
-//        Scanner u_input = new Scanner(System.in);
-//
-//        System.out.print("Loan amount: £");
-//        float loan_amount = u_input.nextFloat();
+//        System.out.print("Loan amount £");
+//        double amount = input.nextDouble();
 //
 //        System.out.print("Interest Rate (APR %): ");
-//        float rate = u_input.nextFloat();
+//        double interest = input.nextDouble();
 //
 //        System.out.print("Number of years: ");
-//        int num_years = u_input.nextInt();
+//        int num_years = input.nextInt();
+//
+//
 //    }
 //}
